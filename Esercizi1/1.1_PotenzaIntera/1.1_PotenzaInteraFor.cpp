@@ -5,6 +5,7 @@ int pow(int base, int esponente);
 using namespace std;
 int main(){
     int a, b;
+    cout<<"inserire base ed esponente:"<<endl;
     cin>>a>>b;
     cout<<pow(a,b);
 }
