@@ -8,6 +8,22 @@ Svolgere prima l'esercizio precedente: si può riutilizzare del codice.
 */
 #include<iostream>
 using namespace std;
-int main(){
 
+char cifraInPosizione(int numero, int posizione);
+
+int main(){
+    int numero, posizione;
+    cout<<"inserire una numero:"<<endl;
+    cin>>numero;
+    cout<<"inserire posizione della cifra che si cerca"<<endl;
+    cin >>posizione;
+    
+    cout<<"cifra in posizione "<<posizione<<" = "<<cifraInPosizione(numero, posizione)<<endl;
+}
+
+char cifraInPosizione(int numero, int posizione){
+    string num=to_string(numero);
+    int lung = num.length();
+    
+    return num[lung-posizione];
 }
