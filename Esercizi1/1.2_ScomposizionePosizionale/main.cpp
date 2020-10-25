@@ -6,24 +6,19 @@ Info: Per scomporre il numero in cifre, usare l'operatore divisione e resto con 
 Questa è un'operazione che capita spesso in programmazione.
 Svolgere prima l'esercizio precedente: si può riutilizzare del codice.
 */
+#include "cifraInPosizione.h"
 #include<iostream>
 using namespace std;
-
-char cifraInPosizione(int numero, int posizione);
 
 int main(){
     int numero, posizione;
     cout<<"inserire una numero:"<<endl;
     cin>>numero;
-    cout<<"inserire posizione della cifra che si cerca"<<endl;
+    cout<<"inserire posizione della cifra che si cerca"
+        <<endl;
     cin >>posizione;
     
-    cout<<"cifra in posizione "<<posizione<<" = "<<cifraInPosizione(numero, posizione)<<endl;
+    cout<<"cifra in posizione "<<posizione<<" = "
+        <<cifraInPosizione(numero, posizione)<<endl;
 }
 
-char cifraInPosizione(int numero, int posizione){
-    string num=to_string(numero);
-    int lung = num.length();
-    
-    return num[lung-posizione];
-}
