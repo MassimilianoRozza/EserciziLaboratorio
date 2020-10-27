@@ -70,3 +70,21 @@ int powInt(int base, int esponente){
     }
     return risultato;
 }
+
+int fattoriale(int numero){
+    int fattoriale=1;
+    while(numero>0){
+        fattoriale=fattoriale*numero;
+        numero--;
+    }
+    return fattoriale;
+}
+
+int fattorialeRicorsivo(int & ripetizioni, int & fattoriale){
+    if(ripetizioni>0){
+        fattoriale=fattoriale*ripetizioni;
+        ripetizioni--;
+        fattorialeRicorsivo(ripetizioni, fattoriale);
+    }
+    return fattoriale;
+}

@@ -33,15 +33,15 @@ int main(){
 }
 
 int potenzaNesima(int base, int esponente){
-    for(int esp=0;esp<=esponente;esp++){
-        /*
-        la riga seguente esegue la stampa del
-        risultato in forma n^x=p;
-        se si vuole un output del tipo p commentare
-        la riga seguente e scommentare la 28°.
-        */
-        cout<<"2^"<<esp<<"="<<powInt(base, esp)<<endl;
-        //cout<<potenzaNesima(base, esp)<<endl;
-    }
-    return 0;
+  for(int esp=0;esp<=esponente;esp++){
+    /*
+    la riga seguente esegue la stampa del
+    risultato in forma n^x=p;
+    se si vuole un output del tipo p commentare
+    la riga seguente e scommentare la 28°.
+    */
+    cout<<"2^"<<esp<<"="<<powInt(base, esp)<<endl;
+    //cout<<potenzaNesima(base, esp)<<endl;
+  }
+  return 0;
 }
