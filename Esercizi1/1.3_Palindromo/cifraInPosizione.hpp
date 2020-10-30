@@ -1,8 +1,9 @@
-#include<iostream>
-using namespace std;
-char cifraInPosizione(int numero, int posizione){
-    string num=to_string(numero);
-    int lung = num.length();
-    
-    return num[lung-posizione-1];
-}
+#ifndef CIF_POS
+#define CIF_POS
+char cifraInPosizione(int numero, int posizione);
+#endif
+
+#ifndef PAL
+#define PAL
+int palindromo(int numero);
+#endif
