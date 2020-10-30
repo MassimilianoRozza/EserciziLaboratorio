@@ -6,7 +6,7 @@ Per esempio i seguenti numeri da 5 cifre sono palindromi:
 SUP che legge un numero a 5 cifre e determina se questo è 
 palindromo o meno.
 */
-#include "cifraInPosizione.h"
+#include "cifraInPosizione.hpp"
 #include <iostream>
 using namespace std;
 
