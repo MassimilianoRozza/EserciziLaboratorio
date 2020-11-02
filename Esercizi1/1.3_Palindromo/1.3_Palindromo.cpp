@@ -6,11 +6,10 @@ Per esempio i seguenti numeri da 5 cifre sono palindromi:
 SUP che legge un numero a 5 cifre e determina se questo è 
 palindromo o meno.
 */
-#include "cifraInPosizione.h"
+#include "cifraInPosizione.hpp"
 #include <iostream>
 using namespace std;
 
-int palindromo(int numero);
 //MAIN ======================================================================
 int main()
 {
@@ -45,26 +44,3 @@ int main()
     }
 }
 
-//FUNZIONE CONTROLLO SE PALINDROMO ==========================================
-int palindromo(int numero){
-    int flag=0;
-    //CONTROLLO LA LUNGHEZZA DEL NUMERO PER EVITARE ERRORI CON LA DIMENSIONE 
-    //  DELLE VARIABULI INT
-    int lungString=to_string(numero).length();
-    if(lungString>=11){
-        cerr<<"numero troppo lungo per poter operare il controllo"<<endl;
-        flag=2;
-    }else{
-        for(int a=0; a<lungString/2 && flag==1;a++){
-            char b=cifraInPosizione(numero, a);
-            char c=cifraInPosizione(numero,lungString-1-a);
-            cout<<"cifra in posizine "<<a+1<<" = "<<b<<"\t"<<"cifra in posizione "<<4-a+1<<" = "<<c<<endl;
-            if(b==c){
-                flag=1;
-            }else{
-                flag=0;
-            } 
-        }
-    }
-    return flag;
-}
